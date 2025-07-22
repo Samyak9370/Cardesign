@@ -1,0 +1,47 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+    color: #F9FAFB; /* text-gray-50 */
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar for a more polished look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1F2937; /* bg-gray-800 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4F46E5; /* bg-indigo-600 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366F1; /* bg-indigo-500 */
+}
+
+/* Ensure the canvas stays behind the content */
+#three-canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.content-section {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.card-bg {
+    background-color: rgba(31, 41, 55, 0.8); /* bg-gray-800 with opacity */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(55, 65, 81, 0.5);
+}
